@@ -1,0 +1,209 @@
+{
+  "name_en": "Richmond Hill",
+  "name_fr": "Richmond Hill",
+  "prov_code": "ON",
+  "country_code": "CA",
+  "alm": {
+    "date": "2019-01-07T00:15-05:00",
+    "normal_low": "-11",
+    "normal_high": "-2",
+    "record_low": "-21.2",
+    "record_low_year": "1994",
+    "record_high": "4.8",
+    "record_high_year": "1998",
+    "sunrise": "7:51AM",
+    "sunset": "4:56PM"
+  },
+  "obs": {
+    "date": "2019-01-07T13:25-05:00",
+    "station_en": "Richmond Hill",
+    "station_fr": "Richmond Hill",
+    "icon_ltr": "w",
+    "weather_en": "Light snow",
+    "weather_fr": "Faible neige",
+    "temperature": "-4",
+    "dewpoint": "-11",
+    "feels_like": "-12",
+    "wind_speed": "30",
+    "wind_dir_en": "SE",
+    "wind_dir_fr": "SE",
+    "rel_humidity": "58",
+    "pressure": "102.5",
+    "pressure_tend": "102.5",
+    "visibility_en": "9",
+    "visibility_fr": "9",
+    "ceiling_en": "19155",
+    "ceiling_fr": "19155"
+  },
+  "period": [
+    {
+      "id": "1",
+      "date": "2019-01-07T14:00-05:00",
+      "label_en": "This afternoon",
+      "label_fr": "cet apr&#232;s-midi",
+      "icon_ltr": "w",
+      "weather_en": "Light snow",
+      "weather_fr": "Faible neige",
+      "temperature": "-1",
+      "dewpoint": "N/A",
+      "wind_speed": "32",
+      "wind_dir_en": "SE",
+      "wind_dir_fr": "SE",
+      "pop": "70"
+    },
+    {
+      "id": "2",
+      "date": "2019-01-07T20:00-05:00",
+      "label_en": "This evening",
+      "label_fr": "ce soir",
+      "icon_ltr": "w",
+      "weather_en": "Freezing rain",
+      "weather_fr": "Pluie vergla&#231;ante",
+      "temperature": "0",
+      "dewpoint": "N/A",
+      "wind_speed": "29",
+      "wind_dir_en": "SE",
+      "wind_dir_fr": "SE",
+      "pop": "90"
+    },
+    {
+      "id": "3",
+      "date": "2019-01-08T02:00-05:00",
+      "label_en": "Tonight",
+      "label_fr": "cette nuit",
+      "icon_ltr": "w",
+      "weather_en": "Light rain",
+      "weather_fr": "Faible pluie",
+      "temperature": "4",
+      "dewpoint": "N/A",
+      "wind_speed": "28",
+      "wind_dir_en": "SW",
+      "wind_dir_fr": "SO",
+      "pop": "60"
+    },
+    {
+      "id": "4",
+      "date": "2019-01-08T08:00-05:00",
+      "label_en": "Tuesday morning",
+      "label_fr": "mardi matin",
+      "icon_ltr": "w",
+      "weather_en": "Variable cloudiness",
+      "weather_fr": "Ciel variable",
+      "temperature": "4",
+      "dewpoint": "N/A",
+      "wind_speed": "11",
+      "wind_dir_en": "W",
+      "wind_dir_fr": "O",
+      "pop": "20"
+    }
+  ],
+  "weekday": [
+    {
+      "id": "1",
+      "date": "2019-01-07T06:00-05:00",
+      "date_text_en": "Monday, Jan 7",
+      "date_text_fr": "7 janvier 2019",
+      "icon_ltr": "v",
+      "weather_en": "Scattered flurries",
+      "weather_fr": "Nuageux avec averses de neige dispers&#233;es",
+      "high_temp": "-1",
+      "low_temp": "-1",
+      "pop": "70"
+    },
+    {
+      "id": "2",
+      "date": "2019-01-08T06:00-05:00",
+      "date_text_en": "Tuesday, Jan 8",
+      "date_text_fr": "8 janvier 2019",
+      "icon_ltr": "l",
+      "weather_en": "Cloudy with showers",
+      "weather_fr": "Nuageux avec averses",
+      "high_temp": "6",
+      "low_temp": "-2",
+      "pop": "40"
+    },
+    {
+      "id": "3",
+      "date": "2019-01-09T06:00-05:00",
+      "date_text_en": "Wednesday, Jan 9",
+      "date_text_fr": "9 janvier 2019",
+      "icon_ltr": "n",
+      "weather_en": "Isolated flurries",
+      "weather_fr": "Passage nuageux avec quelques flocons isol&#233;s",
+      "high_temp": "1",
+      "low_temp": "-8",
+      "pop": "40"
+    },
+    {
+      "id": "4",
+      "date": "2019-01-10T06:00-05:00",
+      "date_text_en": "Thursday, Jan 10",
+      "date_text_fr": "10 janvier 2019",
+      "icon_ltr": "b",
+      "weather_en": "Variable cloudiness",
+      "weather_fr": "Ciel variable",
+      "high_temp": "-7",
+      "low_temp": "-16",
+      "pop": "30"
+    },
+    {
+      "id": "5",
+      "date": "2019-01-11T06:00-05:00",
+      "date_text_en": "Friday, Jan 11",
+      "date_text_fr": "11 janvier 2019",
+      "icon_ltr": "b",
+      "weather_en": "Variable cloudiness",
+      "weather_fr": "Ciel variable",
+      "high_temp": "-9",
+      "low_temp": "-12",
+      "pop": "20"
+    }
+  ],
+  "links": [
+    {
+      "id": "1",
+      "name_en": "TWN Logo",
+      "url_en": "https://www.theweathernetwork.com/?ref=metroland_homepg"
+    },
+    {
+      "id": "2",
+      "name_en": "Hourly Forecast",
+      "url_en": "https://www.theweathernetwork.com/hourly-weather-forecast/CAON0585?ref=metroland_hourlyfx"
+    },
+    {
+      "id": "3",
+      "name_en": "14 Day Trend",
+      "url_en": "https://www.theweathernetwork.com/14-day-weather-trend/CAON0585?ref=metroland_14day"
+    },
+    {
+      "id": "4",
+      "name_en": "Precip Start Stop",
+      "url_en": "https://www.theweathernetwork.com/forecasts/precipitation/CAON0585?ref=metroland_en_precip"
+    },
+    {
+      "id": "5",
+      "name_en": "Radar Map",
+      "url_en": "https://www.theweathernetwork.com/maps/satellite-radar?ref=metroland_radar"
+    },
+    {
+      "id": "6",
+      "name_en": "Alerts &amp; Warnings",
+      "url_en": "https://www.theweathernetwork.com/alerts/CAON0585?ref=metroland_wxwarnings"
+    },
+    {
+      "id": "7",
+      "name_en": "Severe Weather Outlook",
+      "url_en": "https://www.theweathernetwork.com/ca/severe-weather-outlook/CAON0585?ref=metroland_en_severewx"
+    },
+    {
+      "id": "8",
+      "name_en": "Weather News",
+      "url_en": "https://www.theweathernetwork.com/ca/news/category/latest/?ref=metroland_en_wxnews"
+    },
+    {
+      "id": "9",
+      "name_en": "Download Weather Apps",
+      "url_en": "https://www.theweathernetwork.com/weather-apps/?ref=metroland_wxapps"
+    }
+  ]
+}

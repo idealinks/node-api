@@ -1,0 +1,102 @@
+{
+  "name": "communities-node-api",
+  "version": "0.1.0",
+  "description": "A graphQL api for communities built on apollo-server",
+  "homepage": "https://github.com/SMG-Digital/communities-node-api#readme",
+  "bugs": {
+    "url": "https://github.com/SMG-Digital/communities-node-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMG-Digital/communities-node-api.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon ./src/server.ts",
+    "docker-compose:prod": "cross-env docker-compose -p communities-node-api-prod -f ./docker-compose.prod.yml",
+    "docker:exec": "docker exec -it communities-node-api-dev /bin/bash",
+    "prettier": "prettier --write 'src/**/*.{js,json,md}'",
+    "start": "cross-env NODE_ENV=production node dist/src/server.js",
+    "test": "jest",
+    "tslint": "tslint -s node_modules/custom-tslint-formatters/formatters -t grouped 'src/**/*.ts'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+  "lint-staged": {
+    "ignore": [
+      "./package-lock.json"
+    ],
+    "linters": {
+      "*.ts": [
+        "tslint -s node_modules/custom-tslint-formatters/formatters -t grouped --fix",
+        "git add"
+      ],
+      "*.{js,json,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx",
+      "json",
+      "node"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/src/**/*.test.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/.dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    }
+  },
+  "dependencies": {
+    "@types/graphql": "^14.0.5",
+    "@types/jest": "^23.3.13",
+    "@types/pino": "^5.8.4",
+    "apollo-cache-control": "^0.4.1",
+    "apollo-datasource-rest": "^0.2.1",
+    "apollo-server": "^2.2.5",
+    "apollo-server-cache-memcached": "^0.2.2",
+    "dotenv": "^6.2.0",
+    "graphql": "^14.1.1",
+    "jest": "^24.0.0",
+    "pino": "^5.11.1",
+    "pino-pretty": "^2.5.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^23.10.5",
+    "type-graphql": "^0.16.0",
+    "typescript": "^3.2.4",
+    "winston": "^3.2.1",
+    "winston-transport": "^4.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "custom-tslint-formatters": "^2.4.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.15.2",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0"
+  }
+}

@@ -1,0 +1,28 @@
+# ./docker-compose.yml
+
+version: '3'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  graphql:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: communities-node-api-dev
+    command: npm run dev
+    volumes:
+      - .:/usr/api
+    ports:
+      - 4000:4000
+    networks:
+      - app-tier
+
+  memcached:
+    image: 'bitnami/memcached:latest'
+    ports:
+      - 11211:11211
+    networks:
+      - app-tier

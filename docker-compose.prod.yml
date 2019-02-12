@@ -1,0 +1,12 @@
+# PROD ENVIRONMENT
+# This docker-compose file will start the next.js app in a docker container
+# in production mode which can be accessed at http://localhost:4000.
+
+version: '3'
+
+services:
+  nextjs:
+    build: .
+    container_name: communities-node-api-prod
+    ports:
+      - 4000:4000
